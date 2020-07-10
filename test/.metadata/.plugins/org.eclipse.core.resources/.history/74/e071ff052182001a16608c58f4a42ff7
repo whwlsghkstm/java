@@ -1,0 +1,20 @@
+package test;
+
+public class Test0419 {
+
+	public static void main(String[] args) {
+		int a=100;
+		int b=50;
+		System.out.println(a+" " + b);
+		if(a>b) {
+			System.out.println(">");
+		}
+		else if(a<b){
+			System.out.println("<");
+		}
+		else {
+			System.out.println("==");
+		}
+	}
+
+}

@@ -1,0 +1,18 @@
+package Ex01;
+
+public class Sample1 {
+
+	public static void main(String[] args) {
+		int[] num = {1};
+		int[] num1 = {1};
+		
+		if(num[0]==num1[0]) {
+			System.out.println("しし");
+		}
+		else {
+			System.out.println("いい");
+		}
+
+	}
+
+}

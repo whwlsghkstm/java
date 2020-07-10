@@ -1,0 +1,23 @@
+package test;
+
+import java.util.Scanner;
+
+public class Test0419 {
+
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		int a=s.nextInt();
+		int b=s.nextInt();
+		System.out.println(a+" " + b);
+		if(a>b) {
+			System.out.println(">");
+		}
+		else if(a<b){
+			System.out.println("<");
+		}
+		else {
+			System.out.println("==");
+		}
+	}
+
+}

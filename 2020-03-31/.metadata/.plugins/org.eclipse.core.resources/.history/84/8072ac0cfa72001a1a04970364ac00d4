@@ -1,0 +1,8 @@
+package Ex02;
+
+public class Area02 {
+	
+	int h;
+	int w;
+
+}

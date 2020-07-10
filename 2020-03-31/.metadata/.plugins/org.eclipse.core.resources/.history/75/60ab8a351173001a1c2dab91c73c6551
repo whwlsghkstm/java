@@ -1,0 +1,31 @@
+package Ex03;
+//성적관리용 클래스
+public class Grade03 {
+	
+	//필드
+	String gnum;
+	String gname;
+	int kor;
+	int eng;
+	int mat;
+	int gsum;
+	double gavg;
+	
+	//생성자
+	public Grade03(String gnum, String gname, int kor, int eng, int mat) {
+		super();
+		this.gnum = gnum;
+		this.gname = gname;
+		this.kor = kor;
+		this.eng = eng;
+		this.mat = mat;
+	}
+	
+	//method	
+	void printGrade(Grade03 g) {
+		this.gsum=g.kor+g.eng+g.mat;
+		this.gavg=gsum/3.;
+		System.out.print(g.gnum+"\t"+g.gname+"\t"+g.kor+"\t"
+				+g.eng+"\t"+g.mat+"\t"+g.gsum+"\t"+g.gavg);
+	}
+}

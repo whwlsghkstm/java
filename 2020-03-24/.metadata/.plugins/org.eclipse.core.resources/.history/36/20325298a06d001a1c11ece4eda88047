@@ -1,0 +1,39 @@
+package Ex07;
+
+public class Sample {
+
+	public static void main(String[] args) {
+		
+		/* 1~100까지의 합 */
+		int i = 0;
+		int sum = 0;
+		
+		while(i<100) {
+			i+=1;
+			sum += i;			
+		}
+		System.out.println("1~100까지의 합 : " + sum);	
+		
+		/* 0~100 짝수의 합 */
+		i = 0;
+		sum = 0;
+		
+		while(i<100) {
+			i += 2;
+			sum += i;
+		}
+		System.out.println("0~100 짝수의 합 : " + sum);
+		
+		/* 1~100 홀수의 합 */
+		i = 1;
+		sum = 0;
+		
+		while(i<99) {
+			i += 2;
+			sum += i;
+			System.out.println(i);
+		}
+		System.out.println("1~100 홀수의 합 : " + sum);
+	}
+
+}

@@ -1,0 +1,19 @@
+package Ex04;
+
+public class Sample4 {
+
+	public static void main(String[] args) {
+		
+		// 배열 > 참조타입
+		int [] a = {1, 2, 3, 4, 5};
+		int sum = 0;
+		for(int i=0; i<=a.length-1; i++) {
+			System.out.println(i+1 + "번째 = " + a[i]);
+			sum += a[i];
+		}
+		
+		System.out.println("합계 : " + sum);
+
+	}
+
+}

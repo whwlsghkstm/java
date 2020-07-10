@@ -1,0 +1,15 @@
+package Ex01;
+
+public class Student {
+	
+	//필드
+	String sno;
+	String sname;
+	String sph;
+	
+	//기본생성자
+	Student() {
+		
+	}
+
+}

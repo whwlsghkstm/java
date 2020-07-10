@@ -1,0 +1,21 @@
+package Ex02;
+
+public class Area02 {
+	
+	//»ï°¢Çü ³ĞÀÌ
+	double area(int h, int w) {
+		double result = h*w/2.;
+		return result;
+	}
+	
+	//»ç°¢Çü ³ĞÀÌ
+	static int area1(int x, int y) {
+		result x*y;
+	}
+	
+	//Á¤»ç°¢Çü ³ĞÀÌ
+	static int area1(int x) {
+		return x*x;
+	}
+
+}

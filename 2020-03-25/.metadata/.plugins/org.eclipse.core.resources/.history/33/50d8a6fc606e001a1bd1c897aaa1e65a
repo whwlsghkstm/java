@@ -1,0 +1,28 @@
+package Ex05;
+
+import java.util.Scanner;
+
+public class Sample5 {
+
+	public static void main(String[] args) {
+		
+		// 배열을 이용하여 성적표 출력
+		// 이름, 국어, 영어, 수학, 총점, 평균, 학점 >> 각각 변수3개씩
+		Scanner scanner = new Scanner(System.in);
+		String [] name = new String[3];
+		int [] kor = new int[3];
+		int [] eng = new int[3];
+		int [] mat = new int[3];
+		int [] tot = new int[3];
+		double [] avg = new double[3];
+		String [] grade = new String[3];
+		
+		System.out.println("이름\t국어\t영어\t수학\t총점\t평균\t학점");
+		for(int i=0; i<=name.length-1; i++)	{
+			System.out.println(name[i]);
+			name[i] = scanner.next();
+		}
+
+	}
+
+}

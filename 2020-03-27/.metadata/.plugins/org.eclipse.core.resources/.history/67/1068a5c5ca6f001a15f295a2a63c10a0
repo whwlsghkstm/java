@@ -1,0 +1,62 @@
+package Ex01;
+
+import java.util.Scanner;
+
+public class Sample1 {
+
+	public static void main(String[] args) {
+		
+		/* if문 활용 성적출력 */
+		int score = 75;
+		if(score<=100 && score>=95) {
+			System.out.println("A+");
+		}
+		else if(score<95 && score>=90) {
+			System.out.println("A0");
+		}
+		else if(score<90 && score>=85) {
+			System.out.println("B+");
+		}
+		else if(score<85 && score>=80) {
+			System.out.println("B0");
+		}
+		else if(score<80 && score>=75) {
+			System.out.println("C+");
+		}
+		else if(score<75 && score>=70) {
+			System.out.println("C0");
+		}
+		else {
+			System.out.println("F");
+		}
+		
+		
+		/* for문 활용하여 수의 합계 구하기 */
+		int sum=0;
+		for(int i=1; i<=100; i+=1) {
+			sum+=i;
+		}
+		System.out.println("for문 합계 : " + sum);
+		
+		/* while문 활용하여 수의 합계 구하기 */
+		int i=1;
+		sum=0;
+		while(i<=100) {
+			sum+=i;
+			i+=1;
+		}
+		System.out.println("while문 합계 : " + sum);
+		
+		/* 무한루프 whlie문 키보드로 값을 입력받아 멈추기 */
+		Scanner s = new Scanner(System.in);
+		while(true) {
+			int stop = s.nextInt();
+			if(stop==0) {
+				break;
+			}
+			System.out.println(stop + " : 를(을) 입력했습니다.");
+		}
+
+	}
+
+}

@@ -1,0 +1,22 @@
+package Ex02;
+
+public class Area02 {
+	
+	int h;
+	int w;
+	
+	Area02(){
+		
+	}
+	
+	Area02(int h, int w){
+		
+	}
+	
+	//»ï°¢Çü ³ĞÀÌ
+	double tarea(int h, int w) {
+		double result = h*w/2.;
+		return result;
+	}
+
+}

@@ -1,0 +1,68 @@
+package Ex04;
+
+import java.util.Scanner;
+
+public class Sample4 {
+
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		
+		String[] num = new String[100];		//계좌번호
+		String[] name = new String[100];	//예금주
+		int[] balance = new int[100];			//잔액
+		int count = 0;
+		
+		boolean run = true;
+		while(run) {
+			System.out.println("-----------------------------------------");
+			System.out.println("1.계좌생성 | 2.계좌목록 | 3.입금 | 4.출금 | 5.종료");
+			System.out.println("-----------------------------------------");			
+			System.out.print("작업 번호 선택 > ");
+			int menu=s.nextInt();
+			
+			switch(menu) {
+				case 1: // 계좌 생성
+					count++;
+					System.out.println(" *** 계좌 생성 *** ");
+					System.out.print("계좌번호 >\t\t");
+					num[count]=s.next();
+					System.out.print("예금주 >\t\t");
+					name[count]=s.next();
+					System.out.print("초기 입금액 >\t");
+					balance[count]=s.nextInt();
+					System.out.println("고객님의 계좌가 생성 되었습니다.");
+					break;
+				case 2: // 계좌 목록
+					System.out.println(" *** 계좌 목록 *** ");
+					System.out.println("계좌번호\t예금주\t잔액");
+					for(int i=1; i<=count; i++) {
+						System.out.println(num[i] + "\t" + name[i]
+								+ "\t" + balance[i]);
+					}
+					break;
+				case 3: // 입금
+					System.out.println(" *** 입금 *** ");
+					System.out.print("입금액 > ");
+					balance[count] = s.nextInt();
+					balance[count] += balance[count];
+					System.out.println("입금이 정상 처리 되었습니다.");
+					System.out.println(balance[count]);
+					break;
+				case 4: //출금
+					
+					break;
+				case 5: // 종료
+					
+					System.out.println("프로그램을 종료합니다.");
+					run = false;
+					break;
+				default: // case 번호 이외의 값을 입력했을 때 종료
+					System.out.println("잘못 입력 하셨습니다.");
+					System.out.println("프로그램을 종료합니다.");
+					run = false;
+			}
+		}
+
+	}
+
+}

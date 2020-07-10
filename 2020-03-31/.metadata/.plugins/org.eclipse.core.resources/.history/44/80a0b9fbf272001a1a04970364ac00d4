@@ -1,0 +1,25 @@
+package Ex02;
+
+public class Calculator02 {
+	
+	//필드
+	int x;
+	int y;
+	
+	//생성자 - 객체를 생성
+	Calculator02(){
+		
+	}
+
+	//일반생성자
+	Calculator02(int x, int y){
+		this.x=x;		//this는 현재 객체의 필드명을 받겠다는 의미
+		this.y=y;
+	}
+	
+	//method - 동작
+	int plus(int x, int y) {
+		int result=x+y;
+		return result;
+	}
+}

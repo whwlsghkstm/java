@@ -1,0 +1,51 @@
+package Ex02;
+
+public class Sample {
+
+	public static void main(String[] args) {
+		String name = "홍길동";
+		int kor = 98, eng = 98, mat = 100;
+		int tot = kor + eng + mat;
+		double avg = (double)tot/3;
+		String grade = "";
+		
+		/* 등급 구하기 */
+		if(avg >= 90) {
+			if(avg >= 95) {
+				grade = "A+";
+			}
+			else {
+				grade = "A0";
+			}
+		}
+		else if(avg >= 80) {
+			if(avg >85) {
+				grade = "B+";
+			}
+			else {
+				grade = "B0";
+			}
+		}
+		else if(avg >= 70) {
+			if(avg >= 75) {
+				grade = "C+";
+			}
+			else {
+				grade = "C0";
+			}
+		}
+		else {
+			grade = "F";
+		}
+		
+		/* 성적표 출력 */
+		System.out.println("이름 : " + name);
+		System.out.println("국어 : " + kor);
+		System.out.println("영어 : " + eng);
+		System.out.println("수학 : " + mat);
+		System.out.println("총점 : " + tot);
+		System.out.println("평균 : " + avg);
+		System.out.println("등급 : " + grade);
+	}
+
+}

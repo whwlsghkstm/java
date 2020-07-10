@@ -1,0 +1,18 @@
+package Ex01;
+
+public class Car {
+	
+	//필드
+	String company="쉐보레";
+	String model;
+	String color;
+	int maxSpeed;
+	
+	//기본생성자 - 생략가능
+	
+	//method - 동작
+	public void print() {
+		
+	}
+
+}

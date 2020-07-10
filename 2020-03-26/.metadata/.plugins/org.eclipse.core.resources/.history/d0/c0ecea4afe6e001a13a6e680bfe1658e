@@ -1,0 +1,60 @@
+package Ex02;
+
+import java.util.Scanner;
+
+public class Sample2 {
+
+	public static void main(String[] args) {
+
+		Scanner s = new Scanner(System.in);
+		int [] score = null;		//전체에서 사용하는 변수 >> 전역변수
+		int max = -99999;
+		
+		boolean run = true;
+		while(run) {
+			
+			System.out.println("--------------------------------------------");
+			System.out.println("1.학생수 | 2.점수입력 | 3.점수리스트 | 4.분석 | 5.종료");
+			System.out.println("--------------------------------------------");
+			
+			System.out.print("번호를 선택하세요. > ");
+			int menu=s.nextInt();
+			
+			switch(menu) {
+				case 1:
+					System.out.print("학생수 > ");
+					int count = s.nextInt();
+					score=new int[count];
+					break;
+				case 2:
+					for(int i=0; i<=score.length-1; i++) {
+						System.out.print(i+1 + "번 점수입력 > ");
+						score[i]=s.nextInt();
+					}
+					break;					
+				case 3:
+					for(int i=0; i<=score.length-1; i++) {
+						System.out.println(i+1 + "번 점수출력 > " + score[i]);
+					}
+					break;
+				case 4:
+					for(int i=0; i<=score.length-1; i++) {
+						if(max>score[i]) {
+							max=score[i];
+						}
+					}
+					System.out.println("최고점수 > " + max);
+				case 5:
+					run=false;
+					System.out.println("프로그램 종료");
+					break;
+				default:
+					System.out.println("잘못 입력 하셨습니다.");
+					System.out.println("다시 입력해 주세요.");
+			}
+			
+			
+		}
+	}
+
+}

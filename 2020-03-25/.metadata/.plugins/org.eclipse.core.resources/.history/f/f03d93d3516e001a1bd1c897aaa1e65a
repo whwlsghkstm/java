@@ -1,0 +1,22 @@
+package Ex9999;
+
+import java.util.Scanner;
+
+public class Sample9999 {
+
+	public static void main(String[] args) {
+		
+		// N을 입력받은 뒤, 구구단 N단을 출력하는 프로그램을 작성하시오.		
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("1~9 구구단 선택 > ");
+		int num = scanner.nextInt();
+		int sum = 0;
+		
+		for(int i=0; i<=9; i++) {
+			sum*=i;
+			System.out.println(sum);
+		}
+
+	}
+
+}

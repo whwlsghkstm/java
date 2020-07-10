@@ -1,0 +1,22 @@
+package Ex01;
+
+public class Car {
+	
+	//필드
+	String company="쉐보레";
+	String model;
+	String color;
+	int maxSpeed;
+	
+	//기본생성자 - 생략가능
+	
+	//method - 동작
+	public void printCar(Car c) {
+		System.out.println(" *** 자동차정보 *** ");
+		System.out.println("회사명 : " + company);
+		System.out.println("모델명\t차량 색\t최대속도");
+		System.out.println(c.model+"\t"+c.color+"\t"+c.maxSpeed + "km/h");
+		System.out.println();
+	}
+
+}

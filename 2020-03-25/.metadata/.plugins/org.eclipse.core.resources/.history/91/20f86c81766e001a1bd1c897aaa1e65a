@@ -1,0 +1,17 @@
+package Ex1111;
+
+import java.util.Scanner;
+
+public class Sample1111 {
+
+	public static void main(String[] args) {
+		// 5개의 값을 입력받아 합계와 평균 구하기
+		
+		int num = 0;
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println(num + "번째 값 > ");
+
+	}
+
+}

@@ -1,0 +1,22 @@
+package Ex02;
+
+public class Sample02 {
+
+	public static void main(String[] args) {
+		
+		Calculator();
+
+	}
+	
+	public static void Calculator() {
+		Calculator02 c1=new Calculator02(10000, 4);
+		System.out.println("x = " + c1.x);
+		System.out.println("y = " + c1.y);
+		System.out.println("x + y = " + c1.plus(c1.x, c1.y));
+		System.out.println("x - y = " + c1.minus(c1.x, c1.y));
+		System.out.println("x * y = " + c1.rhqgkrl(c1.x, c1.y));
+		System.out.println("x / y = " + c1.sksnrl(c1.x, c1.y));
+		System.out.println("x % y = " + c1.skajwl(c1.x, c1.y));
+	}
+
+}

@@ -1,0 +1,46 @@
+package Ex02;
+
+import java.util.Scanner;
+
+public class Sample02 {
+
+	public static void main(String[] args) {	//void - return 타입이 없는 method
+		//Calculator();
+		Area02();
+
+	}
+	
+	public static void Calculator() {
+		Scanner s=new Scanner(System.in);
+		
+		System.out.print("x값 입력 > ");
+		int x=s.nextInt();
+		System.out.print("y값 입력 > ");
+		int y=s.nextInt();
+		
+		Calculator02 c1=new Calculator02(x, y);
+		System.out.println("x = " + c1.x);
+		System.out.println("y = " + c1.y);
+		System.out.println("x + y = " + c1.plus(c1.x, c1.y));
+		System.out.println("x - y = " + c1.minus(c1.x, c1.y));
+		System.out.println("x * y = " + c1.rhqgkrl(c1.x, c1.y));
+		System.out.println("x / y = " + c1.sksnrl(c1.x, c1.y));
+		System.out.println("x % y = " + c1.skajwl(c1.x, c1.y));
+	}
+	
+	public static void Area02(){
+		Scanner s=new Scanner(System.in);
+		System.out.print("밑변 입력 > ");
+		int w=s.nextInt();
+		System.out.print("높이 입력 > ");
+		int h=s.nextInt();
+		
+		System.out.println("삼각형의 넓이 : " + Area02.area(w, h));
+		
+		System.out.print("가로 길이 입력 > ");
+		int x=s.nextInt();
+		System.out.print("세로 길이 입력 > ");
+		int y=s.nextInt();
+	}
+
+}

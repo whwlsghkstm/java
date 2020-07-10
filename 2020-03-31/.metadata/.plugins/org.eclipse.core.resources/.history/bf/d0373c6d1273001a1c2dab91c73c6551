@@ -1,0 +1,50 @@
+package Ex03;
+//성적관리용 클래스
+public class Grade03 {
+	
+	//필드
+	String gnum;
+	String gname;
+	int kor;
+	int eng;
+	int mat;
+	int gsum;
+	double gavg;
+	char grade;
+	
+	//생성자
+	public Grade03(String gnum, String gname, int kor, int eng, int mat) {
+		super();
+		this.gnum = gnum;
+		this.gname = gname;
+		this.kor = kor;
+		this.eng = eng;
+		this.mat = mat;
+	}
+	
+	//method	
+	void printGrade(Grade03 g) {
+		this.gsum=g.kor+g.eng+g.mat;
+		this.gavg=gsum/3.;
+		this.grade=grade(this.gavg);
+		System.out.println(g.gnum+"\t"+g.gname+"\t"+g.kor+"\t"
+				+g.eng+"\t"+g.mat+"\t"+g.gsum+"\t"+g.gavg+"\t"+g.grade);
+	}
+	
+	//학점
+	char grade(double gavg) {
+		if(gavg>=90) {
+			return 'A';
+		}
+		else if(gavg>=80) {
+			return 'B';
+		}
+		else if(gavg>=70) {
+			return 'C';
+		}
+		else {
+			return 'F';
+		}
+	}
+	
+}

@@ -1,0 +1,49 @@
+package Ex04;
+
+import java.util.Scanner;
+
+public class Sample04 {
+
+	public static void main(String[] args) {
+		
+		Scanner s=new Scanner(System.in);
+		Grade04[] grade=new Grade04[100];
+		int count=0;
+		
+		boolean run=true;
+		while(run) {			
+			System.out.println("------------------------------------");
+			System.out.println("1.성적입력 | 2.성적목록 | 3.성적조회 | 4.종료");
+			System.out.println("------------------------------------");
+			System.out.print("작업번호 선택 > ");
+			int menu=s.nextInt();
+			
+			switch(menu) {
+				case 1:
+					System.out.println(" *** 성적입력 *** ");
+					System.out.print("학번");
+					
+					break;
+					
+				case 2:
+					
+					break;
+					
+				case 3:
+					
+					break;
+					
+				case 4:
+					System.out.println("프로그램을 종료합니다.");
+					run=false;
+					break;
+					
+				default :
+					System.out.println("잘못 입력하셨습니다.");
+					System.out.println("프로그램을 종료합니다.\n");
+					run=false;
+			}
+		}
+	}
+
+}

@@ -1,0 +1,21 @@
+package Ex05;
+
+public class Sample {
+
+	public static void main(String[] args) {
+		
+		switch1();
+
+	}
+	
+	public static void switch1() {
+		System.out.println("switch 예제1");
+		int time = 9;
+		
+		switch(time) {
+		case 9:
+			System.out.println("회의를 시작합니다.");
+		}
+	}
+
+}

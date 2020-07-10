@@ -1,0 +1,64 @@
+package Ex05;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.util.Scanner;
+
+public class Sample5 {
+
+	public static void main(String[] args) throws Exception{
+		
+		String driver = "oracle.jdbc.driver.OracleDriver";
+		String url = "jdbc:oracle:thin:@localhost:1521:xe";
+		String user = "system";
+		String password = "1111";
+
+		Class.forName(driver);
+		Connection con=DriverManager.getConnection(url, user, password);
+		
+		boolean run = true;
+		Scanner s=new Scanner(System.in);
+		
+		while(run) {
+			System.out.println("--------------------------");
+			System.out.println("1.성적입력 | 2.성적출력 | 3.종료");
+			System.out.println("--------------------------");
+			System.out.println("메뉴 선택 > ");
+			int menu=s.nextInt();
+			
+			switch(menu) {
+				case 1:		//성적입력
+					String sql = "insert into tab_grade(sno,sname) values(?,?)";
+					PreparedStatement ps=con.prepareStatement(sql);
+					
+					System.out.print("번호 > ");
+					String sno=s.next();
+					System.out.print("이름 > ");
+					String sname=s.next();
+					
+					ps.setString(1,  sno);
+					ps.setString(2,  sname);
+					ps.execute();
+					
+					System.out.println(" **입력 완료** ");
+					break;
+					
+				case 2:		//성적출력
+					
+					break;
+					
+				case 3:		//프로그램 종료
+					System.out.println("프로그램을 종료합니다.");
+					run=false;
+					break;
+				default:
+					System.out.println("잘못 입력 했습니다.");
+					System.out.println("프로그램을 종료합니다.");
+					run=false;
+			}
+		}
+
+	}
+
+}

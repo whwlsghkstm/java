@@ -1,0 +1,24 @@
+package Ex03;
+
+public class Sample {
+
+	public static void main(String[] args) {
+		String name = "냉장고";
+		int price = 100, number = 5;
+		int tot = price * number;
+		String remark = "";
+		
+		if(tot >= 1000) {
+			remark = "최우수";
+		}
+		else if(tot >=500){
+			remark = "우수";
+		}
+		else {
+			remark = "보통";
+		}
+		System.out.println("이 사원의 " + name + "판매액은 " + tot + "만원으로 " + remark + "입니다.");
+
+	}
+
+}

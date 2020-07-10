@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Hankook.Snowtire&apos; to &apos;SnowTire&apos;&#x0D;&#x0A;- Original project: &apos;Ex01&apos;&#x0D;&#x0A;- Original element: &apos;Hankook.Snowtire&apos;&#x0D;&#x0A;- Renamed element: &apos;Hankook.SnowTire&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Snowtire&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;Hankook{Snowtire.java[Snowtire" matchStrategy="1" name="SnowTire" qualified="false" references="true" similarDeclarations="false" stamp="1585698300343" textual="false" version="1.0"/>
+</session>

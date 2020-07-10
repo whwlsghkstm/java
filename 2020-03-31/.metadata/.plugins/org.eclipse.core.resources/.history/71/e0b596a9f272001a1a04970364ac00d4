@@ -1,0 +1,17 @@
+package Ex02;
+
+public class Sample02 {
+
+	public static void main(String[] args) {
+		
+		Calculator();
+
+	}
+	
+	public static void Calculator() {
+		Calculator02 c1=new Calculator02(3, 4);
+		System.out.println("x = " + c1.x);
+		System.out.println("y = " + c1.y);
+	}
+
+}

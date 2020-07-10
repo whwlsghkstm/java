@@ -1,0 +1,13 @@
+package Ex04;
+
+public class Sample4 {
+
+	public static void main(String[] args) {
+		
+		// 배열 > 참조타입
+		int [] a = {1, 2, 3, 4, 5};
+		System.out.println(a[5]);
+
+	}
+
+}
